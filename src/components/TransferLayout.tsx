@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { convertValue } from '@/lib/convertInput';
 import Notification from './Notification';
@@ -16,7 +16,6 @@ const TransferLayout = () => {
     const [storeResult, setStoreResult] = useState<string[]>([])
     const [showNotification, setShowNotification] = useState(false)
     const [error, setError] = useState<string>('')
-    const textAreaRef = useRef<HTMLTextAreaElement>(null);
 
     const handleConvert = () => {
         try {
@@ -113,7 +112,7 @@ const TransferLayout = () => {
                             className="rounded-md mt-7 w-full bg-teal-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
                             onClick={handleConvert}
                         >
-                            Convert
+                            Decoded
                         </button>
                     </div>
                 </div>
@@ -156,7 +155,7 @@ const TransferLayout = () => {
                             className="rounded-md mt-7 w-full bg-pink-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600"
                             onClick={handleSwap}
                         >
-                            Swap
+                            Swap Format
                         </button>
                     </div>
                 </div>

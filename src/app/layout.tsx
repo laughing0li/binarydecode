@@ -7,17 +7,12 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Spencer Sharp',
+    template: '%s - Binary Decode',
     default:
-      'Spencer Sharp - Software designer, founder, and amateur astronaut',
+      'Binary Decode - Binary code decoder and translator',
   },
   description:
-    'I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
-  alternates: {
-    types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
-    },
-  },
+    'Binary Decode is a code decoder and translator. Binary decode a free online tool for decode between any two of Octal, Binary, Text, Decimal and Hexadecimal.',
 }
 
 export default function RootLayout({
