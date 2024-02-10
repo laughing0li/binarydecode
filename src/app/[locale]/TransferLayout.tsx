@@ -2,9 +2,10 @@
 import React, { useState } from 'react'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { convertValue } from '@/lib/convertInput';
-import Notification from './Notification';
+import Notification from '../../components/Notification';
 import { handleFileSelection } from '@/lib/handleUpload';
 import { downloadResults } from '@/lib/handleDownlaod';
+import { useTranslations } from 'next-intl';
 
 type Format = 'Binary' | 'Octal' | 'Decimal' | 'Hexadecimal' | 'Text'
 
@@ -16,6 +17,8 @@ const TransferLayout = () => {
     const [storeResult, setStoreResult] = useState<string[]>([])
     const [showNotification, setShowNotification] = useState(false)
     const [error, setError] = useState<string>('')
+
+    const t = useTranslations("Index");
 
     const handleConvert = () => {
         try {
@@ -65,6 +68,7 @@ const TransferLayout = () => {
             }
         }
     };
+
     return (
         <>
             {showNotification && <Notification error={error} setShowNotification={setShowNotification} />}
@@ -79,13 +83,12 @@ const TransferLayout = () => {
                                 value={fromFormat}
                                 onChange={(e) => setFromFormat(e.target.value as Format)}
                             >
-                                <option>Binary</option>
-                                <option>Octal</option>
-                                <option>Decimal</option>
-                                <option>Hexadecimal</option>
-                                <option>Text</option>
+                                <option value="Binary">{t("transfer.Binary")}</option>
+                                <option value="Octal">{t("transfer.Octal")}</option>
+                                <option value="Decimal">{t("transfer.Decimal")}</option>
+                                <option value="Hexadecimal">{t("transfer.Hexadecimal")}</option>
+                                <option value="Text">{t("transfer.Text")}</option>
                             </select>
-
                             <div className='space-x-4'>
                                 <label
                                     htmlFor="file-upload"
@@ -112,7 +115,7 @@ const TransferLayout = () => {
                             className="rounded-md mt-7 w-full bg-teal-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
                             onClick={handleConvert}
                         >
-                            Decoded
+                            {t("button.decode")}
                         </button>
                     </div>
                 </div>
@@ -120,18 +123,19 @@ const TransferLayout = () => {
                     <div className="mt-2">
                         <div className='flex justify-between items-baseline'>
                             <select
-                                id="toSelect"
-                                name="toSelect"
+                                id="fromSelect"
+                                name="fromSelect"
                                 className="font-semibold mt-2 block rounded-md border-0 py-3  text-gray-900 dark:bg-[#24283b] dark:text-slate-100 sm:text-sm sm:leading-6 outline-none"
                                 value={toFormat}
                                 onChange={(e) => setToFormat(e.target.value as Format)}
                             >
-                                <option>Binary</option>
-                                <option>Octal</option>
-                                <option>Decimal</option>
-                                <option>Hexadecimal</option>
-                                <option>Text</option>
+                                <option value="Binary">{t("transfer.Binary")}</option>
+                                <option value="Octal">{t("transfer.Octal")}</option>
+                                <option value="Decimal">{t("transfer.Decimal")}</option>
+                                <option value="Hexadecimal">{t("transfer.Hexadecimal")}</option>
+                                <option value="Text">{t("transfer.Text")}</option>
                             </select>
+
                             <div className='space-x-4'>
                                 <button aria-label="Download">
                                     <i className="bi bi-download text-xl" onClick={handleDownload}></i>
@@ -155,7 +159,7 @@ const TransferLayout = () => {
                             className="rounded-md mt-7 w-full bg-pink-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600"
                             onClick={handleSwap}
                         >
-                            Swap Format
+                            {t("button.swap")}
                         </button>
                     </div>
                 </div>

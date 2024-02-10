@@ -1,0 +1,131 @@
+{
+    "Index": {
+        "faq": "Frequently asked questions",
+        "faq1": {
+            "title": "1. What is Binary code system?",
+            "step1": "Binary code is a system of representing text or computer processor instructions using the binary code system's two binary digits, 0 and 1. This coding system underlies the operation of all digital computers and many other types of digital systems. In binary code system, each digit within a binary code is referred to as a bit (short for binary digit), which is the smallest unit of data in computing.",
+            "step2": "Binary code is more like human language but is for computers. Without binary code, computers would not be able to store data or perform complex calculations."
+        },
+        "faq2": {
+            "title": "2. What is Hexadecimal code system?",
+            "step1": "Hexadecimal, often shortened to hex, is a base-16 numeral system. Unlike the decimal system (base-10) which uses 10 digits (0 through 9), the hexadecimal system uses 16 symbols to represent values. It includes the standard decimal digits (0 to 9) and six additional symbols represented by the letters A through F, where A stands for 10, B for 11, C for 12, D for 13, E for 14, and F for 15.",
+            "step2": "The decimal code is the most common way to represent numbers, and it is the primary number system used in arithmetic and mathematics."
+        },
+        "faq3": {
+            "title": "3. What is Octal code system?",
+            "step1": "The octal code system, or octal code, is a base-8 numeral system that uses eight symbols: 0, 1, 2, 3, 4, 5, 6, and 7. It's a compact representation of binary data, where each octal digit represents three binary digits (bits), making it simpler to read and understand large binary numbers for humans.",
+            "step2": "Octal code offers a more human-readable way to interpret binary code, reducing the likelihood of errors in reading or transcribing long sequences of binary code."
+        },
+        "faq4": {
+            "title": "4. What is Binary decode?",
+            "step1": "Binary decode refers to the process of converting binary code—data represented in the binary numeral system of 0s and 1s—into other numeric formats (such as decimal, octal, hexadecimal) or into human-readable text. This process is fundamental in computing and digital communications, where binary data needs to be decoded or displayed in a more understandable form for analysis, processing, or interaction."
+        },
+        "faq5": {
+            "title": "5. How to use the Binary decode online translator?",
+            "step1": "Choose the format you want to decode.",
+            "step2": "Choose the format you want to decode into.",
+            "step3": "Enter or paste the binary code you want to decode.",
+            "step4": "You can upload a file with the format information that you want to decode.",
+            "step5": "Click the decode button.",
+            "step6": "Copy the decoded result or download it to file.",
+            "step7": "You can use the swap format to swap the format"
+        },
+        "faq6": {
+            "title": "6. The principles of the decode binary code to decimal.",
+            "step1": "Using binary 1101 as an example",
+            "step2": "Starting from the right (least significant bit), the positions are 2^0, 2^1, 2^2 and 2^3",
+            "step3": "The binary code `1101` means there's a `1` in the 2^3, 2^2, 2^0 and a `0` in the 2^1",
+            "step4": "The far right digit is `1`, so 2^0 X 1 = 1",
+            "step5": "Moving left, the next digit is `0`, so 2^1 X 0 = 0",
+            "step6": "Then `1` again, so 2^2 X 1 = 4",
+            "step7": "And the leftmost `1`, so 2^3 X 1 = 8",
+            "step8": "Adding the results together, 1 + 0 + 4 + 8 = 13"
+        },
+        "faq7": {
+            "title": "7. The principles of the decode decimal code to binary.",
+            "step1": "Using decimal 26 as an example",
+            "step2": "Divide the decimal number by 2 (the base of the binary code)",
+            "step3": "26 ÷ 2 = 13, Remainder = 0",
+            "step4": "13 ÷ 2 = 6, Remainder = 1",
+            "step5": "6 ÷ 2 = 3, Remainder = 0",
+            "step6": "3 ÷ 2 = 1, Remainder = 1",
+            "step7": "1 ÷ 2 = 0, Remainder = 1 (When the quotient is 0, the process stops)",
+            "step8": "Collect all remainders: 11010 is the binary code"
+        },
+        "faq8": {
+            "title": "8. The principles of the decode binary code to hexadecimal.",
+            "step1": "Converting binary to hexadecimal involves grouping the binary digits into sets of four (starting from the right) and then converting each group into its hexadecimal equivalent. Hexadecimal is a base-16 system, using digits 0-9 and letters A-F to represent values 10 to 15.",
+            "step2": "Using decimal 110101101011 as an example",
+            "step3": "First group the binary, add leading zeros if necessary: 1101 0110 1011 ",
+            "step4": "Convert each binary group to its hexadecimal equivalent>",
+            "step5": "Leftmost `1101`: in hexadecimal (1*2^3 + 1*2^2 + 0*2^1 + 1*2^0 = 13, which is D in hex).",
+            "step6": "Middle `0110`: in hexadecimal (0*2^3 + 1*2^2 + 1*2^1 + 0*2^0 = 6).",
+            "step7": "Rightmost `1011`: in hexadecimal (1*2^3 + 0*2^2 + 1*2^1 + 1*2^0 = 11, which is B in hex).",
+            "step8": "Result: D6B"
+        },
+        "faq9": {
+            "title": "9. The principles of the decode hexadecimal to binary code.",
+            "step1": " Using hexadecimal 1A3F as an example",
+            "step2": "`1` in hexadecimal is `0001` in binary",
+            "step3": "`A` in hexadecimal represents 10. Using decimal convert to binary, which is `1010` in binary ",
+            "step4": "`3` in hexadecimal is `0011` in binary",
+            "step5": "`F` in hexadecimal represents 15, which is `1111` in binary",
+            "step6": "Result: 0001101000111111",
+            "step7": "You can also remove the leading 0 for the result"
+        },
+        "faq10": {
+            "title": "10. The principles of the decode binary code to octal.",
+            "step1": "Using octal 101110101 as an example",
+            "step2": "Group binary: 001 011 101 101",
+            "step3": "`001` converts to `1` in octal.",
+            "step4": "`011` converts to `3` in octal.",
+            "step5": "`101` converts to `5` in octal.",
+            "step6": "`101` converts to `5` in octal.",
+            "step7": "Result: 1355"
+        },
+        "faq11": {
+            "title": "11. The principles of the decode octal to binary code.",
+            "step1": "Using octal 3177 as an example",
+            "step2": "`3` in octal is `011` in binary",
+            "step3": "`1` in octal is `001` in binary",
+            "step4": "`7` in octal is `111` in binary",
+            "step5": "`7` in octal is `111` in binary",
+            "step6": "Result: 011001111111"
+        },
+        "faq12": {
+            "title": "12. Is the Binary decode online translator free?",
+            "step1": "Binary Decode Online Translator is entirely free for everyone. Whether you're a student, professional, hobbyist, or just curious about binary octal or hexadecimal code, you can use our tool without any cost."
+        },
+        "faq13": {
+            "title": "13. Is the Binary decode online translator safe?",
+            "step1": "The Binary Decode Online Translator prioritizes your privacy and data security. The translator processes your data in real-time without storing any of your information on our servers. Once your session ends, the data you've inputted and the results generated are not saved, ensuring your information remains confidential."
+        },
+        "404": {
+            "title": "Page not found",
+            "content": "Sorry, we couldn’t find the page you’re looking for.",
+            "goBack": "Go back home"
+        },
+        "transfer": {
+            "Binary": "Binary",
+            "Decimal": "Decimal",
+            "Hexadecimal": "Hexadecimal",
+            "Octal": "Octal",
+            "Text": "Text",
+            "deButton": "Decode",
+            "swapButton": "Swap Format"
+        },
+        "button": {
+            "decode": "Decode",
+            "swap": "Swap Format"
+        },
+        "Header": {
+            "title": "Binary Decode"
+        }
+    },
+    "Metadata": {
+        "metadata": {
+            "title": "Binary Decode - Binary code decoder and translator",
+            "description": "Binary Decode is a code decoder and translator. Binary decode a free online tool for decode between any two of Octal, Binary, Text, Decimal and Hexadecimal."
+        }
+    }
+}
