@@ -9,7 +9,6 @@ import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import avatarImage from '@/images/avatar.jpg'
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -402,12 +401,6 @@ export function Header() {
           </>
         )}
         <div
-          ref={headerRef}
-          className="top-0 z-10 h-16 pt-6"
-          style={{
-            position:
-              'var(--header-position)' as React.CSSProperties['position'],
-          }}
         >
           <Container
             className="top-[var(--header-top,theme(spacing.6))] w-full"
@@ -416,11 +409,10 @@ export function Header() {
                 'var(--header-inner-position)' as React.CSSProperties['position'],
             }}
           >
-            <div className="relative flex gap-4">
+            <div className="relative flex gap-4 pt-4">
               <div className="flex flex-1">
                 
               </div>
-              
               <h1 className="text-4xl font-mono font-bold tracking-tight text-slate-700 sm:text-5xl dark:text-zinc-300">
                 Binary Decode
               </h1>

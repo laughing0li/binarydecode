@@ -1,15 +1,31 @@
 type Format = 'Binary' | 'Octal' | 'Decimal' | 'Hexadecimal' | 'Text'
 
+// function isValidInput(input: string, format: Format): boolean {
+//     switch (format) {
+//         case 'Binary':
+//             return /^[01]+$/.test(input)
+//         case 'Octal':
+//             return /^[0-7]+$/.test(input)
+//         case 'Decimal':
+//             return /^\d+$/.test(input)
+//         case 'Hexadecimal':
+//             return /^[0-9a-fA-F]+$/.test(input)
+//         case 'Text': // Assuming any string is valid text
+//             return true
+//         default:
+//             return false
+//     }
+// }
 function isValidInput(input: string, format: Format): boolean {
     switch (format) {
         case 'Binary':
-            return /^[01]+$/.test(input)
+            return /^[01\s]*[01][01\s]*$/.test(input)
         case 'Octal':
-            return /^[0-7]+$/.test(input)
+            return /^[0-7\s]*[0-7][0-7\s]*$/.test(input)
         case 'Decimal':
-            return /^\d+$/.test(input)
+            return /^\d[\d\s]*\d$|^\d$/.test(input)
         case 'Hexadecimal':
-            return /^[0-9a-fA-F]+$/.test(input)
+            return /^[0-9a-fA-F\s]*[0-9a-fA-F][0-9a-fA-F\s]*$/.test(input)
         case 'Text': // Assuming any string is valid text
             return true
         default:
@@ -39,7 +55,7 @@ function formatOutput(value: string, format: Format): string {
                 .replace(/^,/, '')
         case 'Hexadecimal':
             // 每四位添加一个空格
-            return value.replace(/(.{4})/g, '$1 ').trim()
+            return value.replace(/(.{4})/g, '$1 ').trim().toUpperCase() // Convert to uppercase
         default:
             return value
     }
@@ -95,6 +111,7 @@ function convertToDecimal(
     input: string,
     format: Exclude<Format, 'text'>,
 ): bigint {
+    input = input.replace(/\s/g, ''); // Remove spaces
     switch (format) {
         case 'Binary':
             return BigInt(`0b${input}`)
