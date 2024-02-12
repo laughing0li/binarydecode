@@ -3,29 +3,35 @@ import { NextIntlClientProvider, useMessages } from 'next-intl';
 import '@/styles/tailwind.css'
 import Analytics from '@/components/Analytics'
 import { Providers } from './providers';
+import { ReactNode } from 'react';
+import { unstable_setRequestLocale } from 'next-intl/server';
 
-export default function RootLayout({
+type Props = {
+    children: ReactNode;
+    locale: string;
+};
+
+function RootLayout({
     children,
     locale,
-}: {
-    children: React.ReactNode
-    locale: string
-}) {
+}: Props) {
     const messages = useMessages();
+    unstable_setRequestLocale(locale);
     return (
         <html lang={locale} className="h-full antialiased" suppressHydrationWarning>
             <Analytics />
             <body className="flex h-full bg-white dark:bg-[#24283b]">
                 <Providers>
                     <div className="flex w-full">
-                        <Layout>
-                            <NextIntlClientProvider locale={locale} messages={messages}>
+                        <NextIntlClientProvider  messages={messages}>
+                            <Layout>
                                 {children}
-                            </NextIntlClientProvider>
-                        </Layout>
+                            </Layout>
+                        </NextIntlClientProvider>
                     </div>
                 </Providers>
             </body>
         </html>
     )
 }
+export default RootLayout;

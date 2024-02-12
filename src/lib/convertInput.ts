@@ -1,21 +1,6 @@
 type Format = 'Binary' | 'Octal' | 'Decimal' | 'Hexadecimal' | 'Text'
 
-// function isValidInput(input: string, format: Format): boolean {
-//     switch (format) {
-//         case 'Binary':
-//             return /^[01]+$/.test(input)
-//         case 'Octal':
-//             return /^[0-7]+$/.test(input)
-//         case 'Decimal':
-//             return /^\d+$/.test(input)
-//         case 'Hexadecimal':
-//             return /^[0-9a-fA-F]+$/.test(input)
-//         case 'Text': // Assuming any string is valid text
-//             return true
-//         default:
-//             return false
-//     }
-// }
+
 function isValidInput(input: string, format: Format): boolean {
     switch (format) {
         case 'Binary':

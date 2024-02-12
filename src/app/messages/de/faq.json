@@ -1,0 +1,131 @@
+{
+    "Index": {
+        "faq": "Häufig gestellte Fragen",
+        "faq1": {
+            "title": "1. Was ist ein Binärcodesystem?",
+            "step1": "Binärcode ist ein System zur Darstellung von Text oder Computerprozessoranweisungen unter Verwendung der beiden Binärziffern 0 und 1 des Binärcodesystems. Dieses Codierungssystem liegt dem Betrieb aller digitalen Computer und vieler anderer Arten digitaler Systeme zugrunde. Im Binärcodesystem wird jede Ziffer innerhalb eines Binärcodes als Bit (kurz für Binärziffer) bezeichnet, die kleinste Dateneinheit in der Informatik.",
+            "step2": "Binärcode ähnelt eher der menschlichen Sprache, ist aber für Computer gedacht. Ohne Binärcode wären Computer nicht in der Lage, Daten zu speichern oder komplexe Berechnungen durchzuführen."
+        },
+        "faq2": {
+            "title": "2. Was ist ein Hexadezimalcodesystem?",
+            "step1": "Hexadezimal, oft abgekürzt als Hex, ist ein Zahlensystem zur Basis 16. Im Gegensatz zum Dezimalsystem (Basis 10), das 10 Ziffern (0 bis 9) verwendet, verwendet das Hexadezimalsystem 16 Symbole zur Darstellung von Werten. Es enthält die Standard-Dezimalziffern (0 bis 9) und sechs zusätzliche Symbole, die durch die Buchstaben A bis F dargestellt werden, wobei A für 10, B für 11, C für 12, D für 13, E für 14 und F für 15 steht.",
+            "step2": "Der Dezimalcode ist die gebräuchlichste Darstellungsweise für Zahlen und das primäre Zahlensystem in der Arithmetik und Mathematik."
+        },
+        "faq3": {
+            "title": "3. Was ist das Oktalcodesystem?",
+            "step1": "Das Oktalcodesystem oder Oktalcode ist ein Zahlensystem zur Basis 8, das acht Symbole verwendet: 0, 1, 2, 3, 4, 5, 6 und 7. Es ist eine kompakte Darstellung binärer Daten, bei denen jede Oktalziffer stellt drei binäre Ziffern (Bits) dar, wodurch es für Menschen einfacher ist, große Binärzahlen zu lesen und zu verstehen.",
+            "step2": "Oktalcode bietet eine für den Menschen besser lesbare Möglichkeit, Binärcode zu interpretieren, wodurch die Wahrscheinlichkeit von Fehlern beim Lesen oder Transkribieren langer Binärcodesequenzen verringert wird."
+        },
+        "faq4": {
+            "title": "4. Was ist Binärdekodierung?",
+            "step1": "Unter Binärdecodierung versteht man den Prozess der Konvertierung von Binärcode – Daten, die im binären Zahlensystem aus Nullen und Einsen dargestellt werden – in andere numerische Formate (z. B. dezimal, oktal, hexadezimal) oder in für Menschen lesbaren Text. Dieser Prozess ist von grundlegender Bedeutung in der Informatik und der digitalen Kommunikation, wo Binärdaten zur Analyse, Verarbeitung oder Interaktion dekodiert oder in einer verständlicheren Form angezeigt werden müssen."
+        },
+        "faq5": {
+            "title": "5. Wie verwende ich den Online-Übersetzer „Binary decode“?",
+            "step1": "Wählen Sie das Format aus, das Sie dekodieren möchten.",
+            "step2": "Wählen Sie das Format aus, in das Sie dekodieren möchten.",
+            "step3": "Geben Sie den Binärcode ein, den Sie dekodieren möchten, oder fügen Sie ihn ein.",
+            "step4": "Sie können eine Datei mit den Formatinformationen hochladen, die Sie dekodieren möchten.",
+            "step5": "Klicken Sie auf die Schaltfläche „Dekodieren“.",
+            "step6": "Kopieren Sie das dekodierte Ergebnis oder laden Sie es in eine Datei herunter.",
+            "step7": "Mit dem Swap-Format können Sie das Format austauschen"
+        },
+        "faq6": {
+            "title": "6. Die Prinzipien der Dekodierung von Binärcode in Dezimalzahlen.",
+            "step1": "Am Beispiel der Binärdatei 1101",
+            "step2": "Von rechts beginnend (niedrigstwertiges Bit) sind die Positionen 2^0, 2^1, 2^2 und 2^3",
+            "step3": "Der Binärcode „1101“ bedeutet, dass es in 2^3, 2^2, 2^0 eine „1“ und in 2^1 eine „0“ gibt",
+            "step4": "Die Ziffer ganz rechts ist „1“, also 2^0 x 1 = 1",
+            "step5": "Wenn wir uns nach links bewegen, ist die nächste Ziffer „0“, also 2^1 X 0 = 0",
+            "step6": "Dann wieder „1“, also 2^2 X 1 = 4",
+            "step7": "Und ganz links „1“, also 2^3 x 1 = 8",
+            "step8": "Addiert man die Ergebnisse, ergibt sich 1 + 0 + 4 + 8 = 13"
+        },
+        "faq7": {
+            "title": "7. Die Prinzipien der Dekodierung von Dezimalcodes in Binärcodes.",
+            "step1": "Am Beispiel der Dezimalzahl 26",
+            "step2": "Teilen Sie die Dezimalzahl durch 2 (die Basis des Binärcodes).",
+            "step3": "26 ÷ 2 = 13, Rest = 0",
+            "step4": "13 ÷ 2 = 6, Rest = 1",
+            "step5": "6 ÷ 2 = 3, Rest = 0",
+            "step6": "3 ÷ 2 = 1, Rest = 1",
+            "step7": "1 ÷ 2 = 0, Rest = 1 (Wenn der Quotient 0 ist, stoppt der Prozess)",
+            "step8": "Sammeln Sie alle Reste: 11010 ist der Binärcode"
+        },
+        "faq8": {
+            "title": "8. Die Prinzipien der Dekodierung von Binärcode in Hexadezimalcode.",
+            "step1": "Bei der Konvertierung von Binärzahlen in Hexadezimalzahlen werden die Binärziffern in Vierergruppen gruppiert (von rechts beginnend) und dann jede Gruppe in ihr hexadezimales Äquivalent umgewandelt. Hexadezimal ist ein System zur Basis 16, das die Ziffern 0–9 und die Buchstaben A–F verwendet, um die Werte 10 bis 15 darzustellen.",
+            "step2": "Am Beispiel der Dezimalzahl 110101101011",
+            "step3": "Gruppieren Sie zunächst die Binärdatei und fügen Sie bei Bedarf führende Nullen hinzu: 1101 0110 1011",
+            "step4": "Konvertieren Sie jede Binärgruppe in ihr hexadezimales Äquivalent>",
+            "step5": "Ganz links „1101“: im Hexadezimalformat (1*2^3 + 1*2^2 + 0*2^1 + 1*2^0 = 13, also D im Hexadezimalformat).",
+            "step6": "Mitte „0110“: hexadezimal (0*2^3 + 1*2^2 + 1*2^1 + 0*2^0 = 6).",
+            "step7": "Ganz rechts „1011“: im Hexadezimalformat (1*2^3 + 0*2^2 + 1*2^1 + 1*2^0 = 11, also B im Hexadezimalformat).",
+            "step8": "Ergebnis: D6B"
+        },
+        "faq9": {
+            "title": "9. Die Prinzipien der Dekodierung von Hexadezimal- in Binärcode.",
+            "step1": " Am Beispiel der Hexadezimalzahl 1A3F",
+            "step2": "„1“ im Hexadezimalformat ist „0001“ im Binärformat",
+            "step3": "„A“ im Hexadezimalformat steht für 10. Mit Dezimalzahl in Binärformat umwandeln, was im Binärformat „1010“ entspricht",
+            "step4": "„3“ im Hexadezimalformat ist „0011“ im Binärformat",
+            "step5": "„F“ im Hexadezimalformat steht für 15, was im Binärformat „1111“ ist",
+            "step6": "Ergebnis: 0001101000111111",
+            "step7": "Sie können auch die führende 0 für das Ergebnis entfernen"
+        },
+        "faq10": {
+            "title": "10. Die Prinzipien der Dekodierung von Binärcode in Oktal.",
+            "step1": "Am Beispiel von Oktal 101110101",
+            "step2": "Gruppenbinär: 001 011 101 101",
+            "step3": "„001“ wird im Oktalformat in „1“ umgewandelt.",
+            "step4": "„011“ wird im Oktalformat in „3“ umgewandelt.",
+            "step5": "„101“ wird im Oktalformat in „5“ umgewandelt.",
+            "step6": "„101“ wird im Oktalformat in „5“ umgewandelt.",
+            "step7": "Ergebnis: 1355"
+        },
+        "faq11": {
+            "title": "11. Die Prinzipien der Dekodierung von Oktal- in Binärcode.",
+            "step1": "Am Beispiel von Oktal 3177",
+            "step2": "„3“ im Oktalformat ist „011“ im Binärformat",
+            "step3": "„1“ im Oktalformat ist „001“ im Binärformat",
+            "step4": "„7“ im Oktalformat ist „111“ im Binärformat",
+            "step5": "„7“ im Oktalformat ist „111“ im Binärformat",
+            "step6": "Ergebnis: 011001111111"
+        },
+        "faq12": {
+            "title": "12. Ist der Online-Übersetzer für die Binärdekodierung kostenlos?",
+            "step1": "Der Binary Decode Online Translator ist für jedermann völlig kostenlos. Ganz gleich, ob Sie Student, Profi, Bastler oder einfach nur neugierig auf binären Oktal- oder Hexadezimalcode sind, Sie können unser Tool kostenlos nutzen."
+        },
+        "faq13": {
+            "title": "13. Ist der Online-Übersetzer für die Binärdekodierung sicher?",
+            "step1": "Der Binary Decode Online Translator legt Wert auf Ihre Privatsphäre und Datensicherheit. Der Übersetzer verarbeitet Ihre Daten in Echtzeit, ohne Ihre Informationen auf unseren Servern zu speichern. Sobald Ihre Sitzung beendet ist, werden die von Ihnen eingegebenen Daten und die generierten Ergebnisse nicht gespeichert, um sicherzustellen, dass Ihre Informationen vertraulich bleiben."
+        },
+        "404": {
+            "title": "Seite nicht gefunden",
+            "content": "Leider konnten wir die von Ihnen gesuchte Seite nicht finden.",
+            "goBack": "Wieder nach Hause gehen"
+        },
+        "transfer": {
+            "Binary": "Binär",
+            "Decimal": "Dezimal",
+            "Hexadecimal": "Hexadezimal",
+            "Octal": "Oktal",
+            "Text": "Text",
+            "deButton": "Dekodieren",
+            "swapButton": "Format austauschen"
+        },
+        "button": {
+            "decode": "Dekodieren",
+            "swap": "Format austauschen"
+        },
+        "Header": {
+            "title": "Binäre Dekodierung"
+        }
+    },
+    "Metadata": {
+        "metadata": {
+            "title": "Binärdekodierung – Binärcode-Decoder und -Übersetzer",
+            "description": "Binary Decode ist ein Code-Decoder und Übersetzer. Binärdekodierung ist ein kostenloses Online-Tool zum Dekodieren zwischen zwei beliebigen Zahlen: Oktal, Binär, Text, Dezimal und Hexadezimal."
+        }
+    }
+}

@@ -1,0 +1,131 @@
+{
+    "Index": {
+        "faq": "Perguntas frequentes",
+        "faq1": {
+            "title": "1. O que é sistema de código binário?",
+            "step1": "O código binário é um sistema de representação de texto ou instruções do processador de computador usando os dois dígitos binários do sistema de código binário, 0 e 1. Este sistema de codificação é a base da operação de todos os computadores digitais e de muitos outros tipos de sistemas digitais. No sistema de código binário, cada dígito dentro de um código binário é referido como um bit (abreviação de dígito binário), que é a menor unidade de dados em computação.",
+            "step2": "O código binário é mais parecido com a linguagem humana, mas é para computadores. Sem código binário, os computadores não seriam capazes de armazenar dados ou realizar cálculos complexos."
+        },
+        "faq2": {
+            "title": "2. O que é sistema de código hexadecimal?",
+            "step1": "Hexadecimal, muitas vezes abreviado para hexadecimal, é um sistema numérico de base 16. Ao contrário do sistema decimal (base 10) que utiliza 10 dígitos (0 a 9), o sistema hexadecimal utiliza 16 símbolos para representar valores. Inclui os dígitos decimais padrão (0 a 9) e seis símbolos adicionais representados pelas letras de A a F, onde A representa 10, B representa 11, C representa 12, D representa 13, E representa 14 e F representa 15.",
+            "step2": "O código decimal é a forma mais comum de representar números e é o principal sistema numérico usado em aritmética e matemática."
+        },
+        "faq3": {
+            "title": "3. O que é o sistema de código octal?",
+            "step1": "O sistema de código octal, ou código octal, é um sistema numérico de base 8 que usa oito símbolos: 0, 1, 2, 3, 4, 5, 6 e 7. É uma representação compacta de dados binários, onde cada dígito octal representa três dígitos binários (bits), tornando mais simples a leitura e a compreensão de grandes números binários para humanos.",
+            "step2": "O código octal oferece uma maneira mais legível de interpretar o código binário, reduzindo a probabilidade de erros na leitura ou transcrição de longas sequências de código binário."
+        },
+        "faq4": {
+            "title": "4. O que é decodificação binária?",
+            "step1": "A decodificação binária refere-se ao processo de conversão de código binário – dados representados no sistema numérico binário de 0s e 1s – em outros formatos numéricos (como decimal, octal, hexadecimal) ou em texto legível por humanos. Este processo é fundamental na computação e nas comunicações digitais, onde os dados binários precisam ser decodificados ou exibidos de uma forma mais compreensível para análise, processamento ou interação."
+        },
+        "faq5": {
+            "title": "5. Como usar o tradutor online de decodificação binária?",
+            "step1": "Escolha o formato que deseja decodificar.",
+            "step2": "Escolha o formato no qual deseja decodificar.",
+            "step3": "Digite ou cole o código binário que deseja decodificar.",
+            "step4": "Você pode fazer upload de um arquivo com as informações de formato que deseja decodificar.",
+            "step5": "Clique no botão decodificar.",
+            "step6": "Copie o resultado decodificado ou baixe-o para um arquivo.",
+            "step7": "Você pode usar o formato de troca para trocar o formato"
+        },
+        "faq6": {
+            "title": "6. Os princípios da decodificação do código binário para decimal.",
+            "step1": "Usando o binário 1101 como exemplo",
+            "step2": "Começando da direita (bit menos significativo), as posições são 2^0, 2^1, 2^2 e 2^3",
+            "step3": "O código binário `1101` significa que há um `1` em 2^3, 2^2, 2^0 e um `0` em 2^1",
+            "step4": "O dígito mais à direita é `1`, então 2 ^ 0 X 1 = 1",
+            "step5": "Movendo para a esquerda, o próximo dígito é `0`, então 2 ^ 1 X 0 = 0",
+            "step6": "Então `1` novamente, então 2 ^ 2 X 1 = 4",
+            "step7": "E o `1` mais à esquerda, então 2 ^ 3 X 1 = 8",
+            "step8": "Somando os resultados, 1 + 0 + 4 + 8 = 13"
+        },
+        "faq7": {
+            "title": "7. Os princípios da decodificação do código decimal para binário.",
+            "step1": "Usando o decimal 26 como exemplo",
+            "step2": "Divida o número decimal por 2 (a base do código binário)",
+            "step3": "26 ÷ 2 = 13, Restante = 0",
+            "step4": "13 ÷ 2 = 6, Restante = 1",
+            "step5": "6 ÷ 2 = 3, Resto = 0",
+            "step6": "3 ÷ 2 = 1, Resto = 1",
+            "step7": "1 ÷ 2 = 0, Resto = 1 (Quando o quociente é 0, o processo para)",
+            "step8": "Colete todos os restos: 11010 é o código binário"
+        },
+        "faq8": {
+            "title": "8. Os princípios da decodificação do código binário para hexadecimal.",
+            "step1": "A conversão de binário em hexadecimal envolve agrupar os dígitos binários em conjuntos de quatro (começando da direita) e depois converter cada grupo em seu equivalente hexadecimal. Hexadecimal é um sistema de base 16, usando dígitos de 0 a 9 e letras de A a F para representar valores de 10 a 15.",
+            "step2": "Usando o decimal 110101101011 como exemplo",
+            "step3": "Primeiro agrupe o binário, adicione zeros à esquerda se necessário: 1101 0110 1011",
+            "step4": "Converta cada grupo binário em seu equivalente hexadecimal>",
+            "step5": "`1101` mais à esquerda: em hexadecimal (1*2^3 + 1*2^2 + 0*2^1 + 1*2^0 = 13, que é D em hexadecimal).",
+            "step6": "Médio `0110`: em hexadecimal (0*2^3 + 1*2^2 + 1*2^1 + 0*2^0 = 6).",
+            "step7": "`1011` mais à direita: em hexadecimal (1*2^3 + 0*2^2 + 1*2^1 + 1*2^0 = 11, que é B em hexadecimal).",
+            "step8": "Resultado: D6B"
+        },
+        "faq9": {
+            "title": "9. Os princípios da descodificação de código hexadecimal para binário.",
+            "step1": " Usando hexadecimal 1A3F como exemplo",
+            "step2": "`1` em hexadecimal é `0001` em binário",
+            "step3": "`A` em hexadecimal representa 10. Usando decimal, converta para binário, que é `1010` em binário",
+            "step4": "`3` em hexadecimal é `0011` em binário",
+            "step5": "`F` em hexadecimal representa 15, que é `1111` em binário",
+            "step6": "Resultado: 0001101000111111",
+            "step7": "Você também pode remover o 0 inicial do resultado"
+        },
+        "faq10": {
+            "title": "10. Os princípios da decodificação do código binário para octal.",
+            "step1": "Usando octal 101110101 como exemplo",
+            "step2": "Binário do grupo: 001 011 101 101",
+            "step3": "`001` converte para `1` em octal.",
+            "step4": "`011` converte para `3` em octal.",
+            "step5": "`101` é convertido em `5` em octal.",
+            "step6": "`101` é convertido em `5` em octal.",
+            "step7": "Resultado: 1355"
+        },
+        "faq11": {
+            "title": "11. Os princípios da descodificação do código octal para binário.",
+            "step1": "Usando octal 3177 como exemplo",
+            "step2": "`3` em octal é `011` em binário",
+            "step3": "`1` em octal é `001` em binário",
+            "step4": "`7` em octal é `111` em binário",
+            "step5": "`7` em octal é `111` em binário",
+            "step6": "Resultado: 011001111111"
+        },
+        "faq12": {
+            "title": "12. O tradutor online de decodificação binária é gratuito?",
+            "step1": "O Binary Decode Online Translator é totalmente gratuito para todos. Quer você seja estudante, profissional, hobby ou apenas curioso sobre código binário octal ou hexadecimal, você pode usar nossa ferramenta sem nenhum custo."
+        },
+        "faq13": {
+            "title": "13. O tradutor online de decodificação binária é seguro?",
+            "step1": "O Binary Decode Online Translator prioriza sua privacidade e segurança de dados. O tradutor processa seus dados em tempo real sem armazenar nenhuma informação sua em nossos servidores. Após o término da sessão, os dados inseridos e os resultados gerados não serão salvos, garantindo que suas informações permaneçam confidenciais."
+        },
+        "404": {
+            "title": "página não encontrada",
+            "content": "Lamentamos, mas não conseguimos encontrar a página que procura.",
+            "goBack": "Volto para casa"
+        },
+        "transfer": {
+            "Binary": "Binário",
+            "Decimal": "Decimal",
+            "Hexadecimal": "Hexadecimal",
+            "Octal": "octal",
+            "Text": "Texto",
+            "deButton": "Decodificar",
+            "swapButton": "Trocar formato"
+        },
+        "button": {
+            "decode": "Decodificar",
+            "swap": "Trocar formato"
+        },
+        "Header": {
+            "title": "Decodificação Binária"
+        }
+    },
+    "Metadata": {
+        "metadata": {
+            "title": "Binary Decode - Decodificador e tradutor de código binário",
+            "description": "Binary Decode é um decodificador e tradutor de código. Decodificação binária, uma ferramenta online gratuita para decodificação entre quaisquer dois: Octal, Binário, Texto, Decimal e Hexadecimal."
+        }
+    }
+}

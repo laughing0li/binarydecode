@@ -2,10 +2,11 @@
 import React, { useState } from 'react'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { convertValue } from '@/lib/convertInput';
-import Notification from '../../components/Notification';
+import Notification from './Notification';
 import { handleFileSelection } from '@/lib/handleUpload';
 import { downloadResults } from '@/lib/handleDownlaod';
 import { useTranslations } from 'next-intl';
+
 
 type Format = 'Binary' | 'Octal' | 'Decimal' | 'Hexadecimal' | 'Text'
 
@@ -68,7 +69,7 @@ const TransferLayout = () => {
             }
         }
     };
-
+    
     return (
         <>
             {showNotification && <Notification error={error} setShowNotification={setShowNotification} />}

@@ -1,9 +1,11 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { useTranslations } from "next-intl";
+export const dynamic = 'force-dynamic'
 
 export default function NotFound() {
   const t = useTranslations("Index");
+
   return (
     <Container className="flex h-full items-center pt-16 sm:pt-32">
       <div className="flex flex-col items-center">

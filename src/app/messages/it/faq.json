@@ -1,0 +1,131 @@
+{
+    "Index": {
+        "faq": "Domande frequenti",
+        "faq1": {
+            "title": "1. Cos'è il sistema di codice binario?",
+            "step1": "Il codice binario è un sistema di rappresentazione del testo o delle istruzioni del processore del computer utilizzando le due cifre binarie del sistema di codice binario, 0 e 1. Questo sistema di codifica è alla base del funzionamento di tutti i computer digitali e di molti altri tipi di sistemi digitali. Nel sistema di codice binario, ogni cifra all'interno di un codice binario viene definita bit (abbreviazione di cifra binaria), che è la più piccola unità di dati nell'informatica.",
+            "step2": "Il codice binario è più simile al linguaggio umano ma è destinato ai computer. Senza il codice binario, i computer non sarebbero in grado di archiviare dati o eseguire calcoli complessi."
+        },
+        "faq2": {
+            "title": "2. Cos'è il sistema di codice esadecimale?",
+            "step1": "L'esadecimale, spesso abbreviato in esadecimale, è un sistema numerico in base 16. A differenza del sistema decimale (base 10) che utilizza 10 cifre (da 0 a 9), il sistema esadecimale utilizza 16 simboli per rappresentare i valori. Include le cifre decimali standard (da 0 a 9) e sei simboli aggiuntivi rappresentati dalle lettere da A a F, dove A sta per 10, B per 11, C per 12, D per 13, E per 14 e F per 15.",
+            "step2": "Il codice decimale è il modo più comune per rappresentare i numeri ed è il sistema numerico principale utilizzato in aritmetica e matematica."
+        },
+        "faq3": {
+            "title": "3. Cos'è il sistema di codice ottale?",
+            "step1": "Il sistema di codice ottale, o codice ottale, è un sistema numerico in base 8 che utilizza otto simboli: 0, 1, 2, 3, 4, 5, 6 e 7. È una rappresentazione compatta di dati binari, in cui ciascuna cifra ottale rappresenta tre cifre binarie (bit), rendendo più semplice per gli esseri umani leggere e comprendere grandi numeri binari.",
+            "step2": "Il codice ottale offre un modo più leggibile dall'uomo per interpretare il codice binario, riducendo la probabilità di errori nella lettura o nella trascrizione di lunghe sequenze di codice binario."
+        },
+        "faq4": {
+            "title": "4. Cos'è la decodifica binaria?",
+            "step1": "La decodifica binaria si riferisce al processo di conversione del codice binario (dati rappresentati nel sistema numerico binario di 0 e 1) in altri formati numerici (come decimale, ottale, esadecimale) o in testo leggibile dall'uomo. Questo processo è fondamentale nell'informatica e nelle comunicazioni digitali, dove i dati binari devono essere decodificati o visualizzati in una forma più comprensibile per l'analisi, l'elaborazione o l'interazione."
+        },
+        "faq5": {
+            "title": "5. Come utilizzare il traduttore online per la decodifica binaria?",
+            "step1": "Scegli il formato che vuoi decodificare.",
+            "step2": "Scegli il formato in cui vuoi decodificare.",
+            "step3": "Inserisci o incolla il codice binario che desideri decodificare.",
+            "step4": "Puoi caricare un file con le informazioni sul formato che desideri decodificare.",
+            "step5": "Fare clic sul pulsante di decodifica.",
+            "step6": "Copia il risultato decodificato o scaricalo in un file.",
+            "step7": "È possibile utilizzare il formato di scambio per scambiare il formato"
+        },
+        "faq6": {
+            "title": "6. I principi della decodifica del codice binario in decimale.",
+            "step1": "Utilizzando il binario 1101 come esempio",
+            "step2": "Partendo da destra (bit meno significativo), le posizioni sono 2^0, 2^1, 2^2 e 2^3",
+            "step3": "Il codice binario \"1101\" significa che c'è un \"1\" in 2^3, 2^2, 2^0 e uno \"0\" in 2^1",
+            "step4": "La cifra all'estrema destra è \"1\", quindi 2^0 X 1 = 1",
+            "step5": "Spostandosi a sinistra, la cifra successiva è \"0\", quindi 2^1 X 0 = 0",
+            "step6": "Poi di nuovo \"1\", quindi 2^2 X 1 = 4",
+            "step7": "E l'\"1\" più a sinistra, quindi 2^3 X 1 = 8",
+            "step8": "Sommando i risultati, 1 + 0 + 4 + 8 = 13"
+        },
+        "faq7": {
+            "title": "7. I principi della decodifica del codice decimale in binario.",
+            "step1": "Utilizzando il decimale 26 come esempio",
+            "step2": "Dividere il numero decimale per 2 (la base del codice binario)",
+            "step3": "26 ÷ 2 = 13, resto = 0",
+            "step4": "13 ÷ 2 = 6, Resto = 1",
+            "step5": "6 ÷ 2 = 3, resto = 0",
+            "step6": "3 ÷ 2 = 1, Resto = 1",
+            "step7": "1 ÷ 2 = 0, Resto = 1 (Quando il quoziente è 0, il processo si ferma)",
+            "step8": "Raccogli tutti i resti: 11010 è il codice binario"
+        },
+        "faq8": {
+            "title": "8. I principi della decodifica del codice binario in esadecimale.",
+            "step1": "La conversione da binario a esadecimale implica il raggruppamento delle cifre binarie in gruppi di quattro (partendo da destra) e quindi la conversione di ciascun gruppo nel suo equivalente esadecimale. Il sistema esadecimale è un sistema base 16, che utilizza le cifre 0-9 e le lettere A-F per rappresentare i valori da 10 a 15.",
+            "step2": "Utilizzando il decimale 110101101011 come esempio",
+            "step3": "Per prima cosa raggruppa il codice binario, aggiungi gli zeri iniziali se necessario: 1101 0110 1011",
+            "step4": "Converti ciascun gruppo binario nel suo equivalente esadecimale>",
+            "step5": "\"1101\" più a sinistra: in esadecimale (1*2^3 + 1*2^2 + 0*2^1 + 1*2^0 = 13, che è D in esadecimale).",
+            "step6": "\"0110\" centrale: in esadecimale (0*2^3 + 1*2^2 + 1*2^1 + 0*2^0 = 6).",
+            "step7": "\"1011\" più a destra: in esadecimale (1*2^3 + 0*2^2 + 1*2^1 + 1*2^0 = 11, che è B in esadecimale).",
+            "step8": "Risultato: D6B"
+        },
+        "faq9": {
+            "title": "9. I principi della decodifica del codice esadecimale in binario.",
+            "step1": " Utilizzando l'esadecimale 1A3F come esempio",
+            "step2": "\"1\" in esadecimale è \"0001\" in binario",
+            "step3": "\"A\" in esadecimale rappresenta 10. Utilizzando i decimali si converte in binario, che è \"1010\" in binario",
+            "step4": "\"3\" in esadecimale è \"0011\" in binario",
+            "step5": "\"F\" in esadecimale rappresenta 15, che è \"1111\" in binario",
+            "step6": "Risultato: 0001101000111111",
+            "step7": "Puoi anche rimuovere lo 0 iniziale dal risultato"
+        },
+        "faq10": {
+            "title": "10. I principi della decodifica del codice binario in ottale.",
+            "step1": "Usando l'ottale 101110101 come esempio",
+            "step2": "Binario di gruppo: 001 011 101 101",
+            "step3": "\"001\" viene convertito in \"1\" in ottale.",
+            "step4": "\"011\" viene convertito in \"3\" in ottale.",
+            "step5": "\"101\" viene convertito in \"5\" in ottale.",
+            "step6": "\"101\" viene convertito in \"5\" in ottale.",
+            "step7": "Risultato: 1355"
+        },
+        "faq11": {
+            "title": "11. I principi della decodifica del codice ottale in binario.",
+            "step1": "Usando l'ottale 3177 come esempio",
+            "step2": "\"3\" in ottale è \"011\" in binario",
+            "step3": "\"1\" in ottale è \"001\" in binario",
+            "step4": "\"7\" in ottale è \"111\" in binario",
+            "step5": "\"7\" in ottale è \"111\" in binario",
+            "step6": "Risultato: 011001111111"
+        },
+        "faq12": {
+            "title": "12. Il traduttore online per la decodifica binaria è gratuito?",
+            "step1": "Il traduttore online di decodifica binaria è completamente gratuito per tutti. Che tu sia uno studente, un professionista, un hobbista o semplicemente curioso del codice binario ottale o esadecimale, puoi utilizzare il nostro strumento senza alcun costo."
+        },
+        "faq13": {
+            "title": "13. Il traduttore online di decodifica binaria è sicuro?",
+            "step1": "Il traduttore online Binary Decode dà priorità alla tua privacy e alla sicurezza dei dati. Il traduttore elabora i tuoi dati in tempo reale senza archiviare nessuna delle tue informazioni sui nostri server. Una volta terminata la sessione, i dati che hai inserito e i risultati generati non vengono salvati, garantendo che le tue informazioni rimangano riservate."
+        },
+        "404": {
+            "title": "pagina non trovata",
+            "content": "Siamo spiacenti, non siamo riusciti a trovare la pagina che stai cercando.",
+            "goBack": "Torna a casa"
+        },
+        "transfer": {
+            "Binary": "Binario",
+            "Decimal": "Decimale",
+            "Hexadecimal": "Esadecimale",
+            "Octal": "Ottale",
+            "Text": "Testo",
+            "deButton": "Decodificare",
+            "swapButton": "Scambia formato"
+        },
+        "button": {
+            "decode": "Decodificare",
+            "swap": "Scambia formato"
+        },
+        "Header": {
+            "title": "Decodifica binaria"
+        }
+    },
+    "Metadata": {
+        "metadata": {
+            "title": "Decodifica binaria: decodificatore e traduttore di codice binario",
+            "description": "Binary Decode è un decodificatore e traduttore di codici. Decodifica binaria uno strumento online gratuito per la decodifica tra due qualsiasi di ottale, binario, testo, decimale ed esadecimale."
+        }
+    }
+}

@@ -29,7 +29,8 @@ yarn-error.log*
 
 # vercel
 .vercel
-
+service_account.json
+translation.py
 # typescript
 *.tsbuildinfo
 next-env.d.ts

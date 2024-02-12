@@ -1,7 +1,6 @@
 import { Container } from '@/components/Container'
-import Faqs from '@/app/[locale]/Faqs'
-import TransferLayout from '@/app/[locale]/TransferLayout'
-import { Metadata } from 'next'
+import Faqs from '@/components/Faqs'
+import TransferLayout from '@/components/TransferLayout'
 import { ReactNode } from 'react';
 import { getTranslations } from 'next-intl/server';
 
@@ -13,14 +12,13 @@ export async function generateMetadata({
   params: { locale }
 }: Omit<Props, 'children'>) {
   const t = await getTranslations({ locale, namespace: 'Metadata' });
-  
   return {
       title: t('metadata.title'),
       description: t('metadata.description'),
   };
 }
 
-export default function Home() {
+export default function IndexPage() {
   return (
     <>
       <Container>

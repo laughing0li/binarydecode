@@ -2,7 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.binarydecode.com/</loc>
-        <lastmod>2024-02-08</lastmod>
+        <lastmod>2024-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.binarydecode.com/es</loc>
+        <lastmod>2024-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.binarydecode.com/fr</loc>
+        <lastmod>2024-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.binarydecode.com/hi</loc>
+        <lastmod>2024-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.binarydecode.com/it</loc>
+        <lastmod>2024-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.binarydecode.com/jp</loc>
+        <lastmod>2024-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.binarydecode.com/ko</loc>
+        <lastmod>2024-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.binarydecode.com/pt</loc>
+        <lastmod>2024-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.binarydecode.com/ko</loc>
+        <lastmod>2024-02-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>

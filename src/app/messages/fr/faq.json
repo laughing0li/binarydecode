@@ -1,0 +1,131 @@
+{
+    "Index": {
+        "faq": "Questions fréquemment posées",
+        "faq1": {
+            "title": "1. Qu'est-ce que le système de code binaire ?",
+            "step1": "Le code binaire est un système de représentation de texte ou d'instructions de processeur informatique utilisant les deux chiffres binaires du système de code binaire, 0 et 1. Ce système de codage est à la base du fonctionnement de tous les ordinateurs numériques et de nombreux autres types de systèmes numériques. Dans le système de code binaire, chaque chiffre d'un code binaire est appelé bit (abréviation de chiffre binaire), qui est la plus petite unité de données informatique.",
+            "step2": "Le code binaire ressemble davantage au langage humain mais est destiné aux ordinateurs. Sans code binaire, les ordinateurs ne seraient pas capables de stocker des données ou d’effectuer des calculs complexes."
+        },
+        "faq2": {
+            "title": "2. Qu'est-ce que le système de code hexadécimal ?",
+            "step1": "L'hexadécimal, souvent abrégé en hexadécimal, est un système numérique en base 16. Contrairement au système décimal (base 10) qui utilise 10 chiffres (0 à 9), le système hexadécimal utilise 16 symboles pour représenter les valeurs. Il comprend les chiffres décimaux standard (0 à 9) et six symboles supplémentaires représentés par les lettres A à F, où A représente 10, B pour 11, C pour 12, D pour 13, E pour 14 et F pour 15.",
+            "step2": "Le code décimal est la manière la plus courante de représenter les nombres et constitue le principal système numérique utilisé en arithmétique et en mathématiques."
+        },
+        "faq3": {
+            "title": "3. Qu'est-ce que le système de code Octal ?",
+            "step1": "Le système de code octal, ou code octal, est un système numérique en base 8 qui utilise huit symboles : 0, 1, 2, 3, 4, 5, 6 et 7. Il s'agit d'une représentation compacte de données binaires, où chaque chiffre octal représente trois chiffres binaires (bits), ce qui simplifie la lecture et la compréhension des grands nombres binaires pour les humains.",
+            "step2": "Le code octal offre une manière plus lisible par l'homme d'interpréter le code binaire, réduisant ainsi le risque d'erreurs lors de la lecture ou de la transcription de longues séquences de code binaire."
+        },
+        "faq4": {
+            "title": "4. Qu'est-ce que le décodage binaire ?",
+            "step1": "Le décodage binaire fait référence au processus de conversion du code binaire (données représentées dans le système numérique binaire de 0 et de 1) en d'autres formats numériques (tels que décimal, octal, hexadécimal) ou en texte lisible par l'homme. Ce processus est fondamental dans l'informatique et les communications numériques, où les données binaires doivent être décodées ou affichées sous une forme plus compréhensible pour l'analyse, le traitement ou l'interaction."
+        },
+        "faq5": {
+            "title": "5. Comment utiliser le traducteur en ligne de décodage binaire ?",
+            "step1": "Choisissez le format que vous souhaitez décoder.",
+            "step2": "Choisissez le format dans lequel vous souhaitez décoder.",
+            "step3": "Entrez ou collez le code binaire que vous souhaitez décoder.",
+            "step4": "Vous pouvez télécharger un fichier avec les informations de format que vous souhaitez décoder.",
+            "step5": "Cliquez sur le bouton de décodage.",
+            "step6": "Copiez le résultat décodé ou téléchargez-le dans un fichier.",
+            "step7": "Vous pouvez utiliser le format d'échange pour échanger le format"
+        },
+        "faq6": {
+            "title": "6. Les principes du décodage du code binaire en décimal.",
+            "step1": "Utiliser le binaire 1101 comme exemple",
+            "step2": "En partant de la droite (bit le moins significatif), les positions sont 2^0, 2^1, 2^2 et 2^3",
+            "step3": "Le code binaire « 1101 » signifie qu'il y a un « 1 » dans le 2^3, 2^2, 2^0 et un « 0 » dans le 2^1.",
+            "step4": "Le chiffre le plus à droite est « 1 », donc 2^0 X 1 = 1",
+            "step5": "En allant vers la gauche, le chiffre suivant est « 0 », donc 2^1 X 0 = 0",
+            "step6": "Puis à nouveau `1`, donc 2^2 X 1 = 4",
+            "step7": "Et le « 1 » le plus à gauche, donc 2^3 X 1 = 8",
+            "step8": "En additionnant les résultats, 1 + 0 + 4 + 8 = 13"
+        },
+        "faq7": {
+            "title": "7. Les principes du décodage du code décimal en binaire.",
+            "step1": "Utiliser le nombre décimal 26 comme exemple",
+            "step2": "Divisez le nombre décimal par 2 (la base du code binaire)",
+            "step3": "26 ÷ 2 = 13, Reste = 0",
+            "step4": "13 ÷ 2 = 6, Reste = 1",
+            "step5": "6 ÷ 2 = 3, Reste = 0",
+            "step6": "3 ÷ 2 = 1, Reste = 1",
+            "step7": "1 ÷ 2 = 0, Reste = 1 (Lorsque le quotient est 0, le processus s'arrête)",
+            "step8": "Collectez tous les restes : 11010 est le code binaire"
+        },
+        "faq8": {
+            "title": "8. Les principes du décodage du code binaire en hexadécimal.",
+            "step1": "La conversion binaire en hexadécimal implique de regrouper les chiffres binaires en ensembles de quatre (en commençant par la droite), puis de convertir chaque groupe en son équivalent hexadécimal. L'hexadécimal est un système en base 16, utilisant les chiffres 0 à 9 et les lettres A à F pour représenter les valeurs 10 à 15.",
+            "step2": "En utilisant le nombre décimal 110101101011 comme exemple",
+            "step3": "Regroupez d’abord le binaire, ajoutez des zéros non significatifs si nécessaire : 1101 0110 1011",
+            "step4": "Convertir chaque groupe binaire en son équivalent hexadécimal>",
+            "step5": "« 1101 » le plus à gauche : en hexadécimal (1*2^3 + 1*2^2 + 0*2^1 + 1*2^0 = 13, soit D en hexadécimal).",
+            "step6": "Milieu `0110` : en hexadécimal (0*2^3 + 1*2^2 + 1*2^1 + 0*2^0 = 6).",
+            "step7": "« 1011 » le plus à droite : en hexadécimal (1*2^3 + 0*2^2 + 1*2^1 + 1*2^0 = 11, qui est B en hexadécimal).",
+            "step8": "Résultat : D6B"
+        },
+        "faq9": {
+            "title": "9. Les principes du décodage du code hexadécimal en code binaire.",
+            "step1": " En utilisant l'hexadécimal 1A3F comme exemple",
+            "step2": "« 1 » en hexadécimal est « 0001 » en binaire",
+            "step3": "« A » en hexadécimal représente 10. Utilisation de la conversion décimale en binaire, qui est « 1010 » en binaire",
+            "step4": "« 3 » en hexadécimal est « 0011 » en binaire",
+            "step5": "« F » en hexadécimal représente 15, ce qui correspond à « 1111 » en binaire",
+            "step6": "Résultat : 0001101000111111",
+            "step7": "Vous pouvez également supprimer le premier 0 du résultat"
+        },
+        "faq10": {
+            "title": "10. Les principes du décodage du code binaire en octal.",
+            "step1": "En utilisant l'octal 101110101 comme exemple",
+            "step2": "Groupe binaire : 001 011 101 101",
+            "step3": "« 001 » est converti en « 1 » en octal.",
+            "step4": "« 011 » est converti en « 3 » en octal.",
+            "step5": "« 101 » est converti en « 5 » en octal.",
+            "step6": "« 101 » est converti en « 5 » en octal.",
+            "step7": "Résultat : 1355"
+        },
+        "faq11": {
+            "title": "11. Les principes du décodage du code octal en binaire.",
+            "step1": "En utilisant l'octal 3177 comme exemple",
+            "step2": "`3` en octal est `011` en binaire",
+            "step3": "`1` en octal est `001` en binaire",
+            "step4": "« 7 » en octal est « 111 » en binaire",
+            "step5": "« 7 » en octal est « 111 » en binaire",
+            "step6": "Résultat : 011001111111"
+        },
+        "faq12": {
+            "title": "12. Le traducteur en ligne de décodage binaire est-il gratuit ?",
+            "step1": "Le traducteur en ligne Binary Decode est entièrement gratuit pour tout le monde. Que vous soyez étudiant, professionnel, amateur ou simplement curieux de connaître le code binaire octal ou hexadécimal, vous pouvez utiliser notre outil sans aucun frais."
+        },
+        "faq13": {
+            "title": "13. Le traducteur en ligne de décodage binaire est-il sûr ?",
+            "step1": "Le traducteur en ligne Binary Decode donne la priorité à votre confidentialité et à la sécurité de vos données. Le traducteur traite vos données en temps réel sans stocker aucune de vos informations sur nos serveurs. Une fois votre session terminée, les données que vous avez saisies et les résultats générés ne sont pas enregistrés, garantissant ainsi la confidentialité de vos informations."
+        },
+        "404": {
+            "title": "Page non trouvée",
+            "content": "Désolé, nous n’avons pas trouvé la page que vous recherchez.",
+            "goBack": "Rentrer à la maison"
+        },
+        "transfer": {
+            "Binary": "Binaire",
+            "Decimal": "Décimal",
+            "Hexadecimal": "Hexadécimal",
+            "Octal": "Octal",
+            "Text": "Texte",
+            "deButton": "Décoder",
+            "swapButton": "Format d'échange"
+        },
+        "button": {
+            "decode": "Décoder",
+            "swap": "Format d'échange"
+        },
+        "Header": {
+            "title": "Décodage binaire"
+        }
+    },
+    "Metadata": {
+        "metadata": {
+            "title": "Binary Decode - Décodeur et traducteur de code binaire",
+            "description": "Binary Decode est un décodeur et traducteur de code. Binary Decode est un outil en ligne gratuit permettant de décoder entre deux éléments parmi Octal, Binaire, Texte, Décimal et Hexadécimal."
+        }
+    }
+}
