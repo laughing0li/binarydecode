@@ -30,7 +30,7 @@ export default function LanSwitcher() {
     console.log(pathname)
     return (
         <Popover className="relative">
-            <Popover.Button className="hover:cursor-pointer inline-flex outline-none items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <Popover.Button className="hover:cursor-pointer inline-flex outline-none items-center gap-x-1 text-sm font-semibold leading-6 text-slate-700 dark:text-zinc-300">
                 <span className='text font-light font-mono mr-1'>{currentLocale}</span>
                 <i className="bi bi-translate text-2xl" ></i>
             </Popover.Button>
