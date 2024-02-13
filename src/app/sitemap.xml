@@ -7,6 +7,24 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://www.binarydecode.com/ar</loc>
+        <lastmod>2024-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.binarydecode.com/ch</loc>
+        <lastmod>2024-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.binarydecode.com/de</loc>
+        <lastmod>2024-02-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>https://www.binarydecode.com/es</loc>
         <lastmod>2024-02-12</lastmod>
         <changefreq>monthly</changefreq>
@@ -49,7 +67,7 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.binarydecode.com/ko</loc>
+        <loc>https://www.binarydecode.com/ru</loc>
         <lastmod>2024-02-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
