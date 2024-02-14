@@ -19,7 +19,7 @@ export async function generateMetadata({
     acc[locale as keyof typeof acc] = `${baseUrl}/${locale}`;
     return acc;
   }, {} as Record<string, string>)
-  languages['x-default'] = `${baseUrl}/${locale}`;
+  languages['x-default'] = `${baseUrl}`;
 
   return {
     title: t('metadata.title'),
