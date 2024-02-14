@@ -1,10 +1,11 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { useTranslations } from "next-intl";
+export const dynamic = 'force-dynamic'
+
 
 export default function NotFoundPage() {
     const t = useTranslations("Index");
-
     return (
         <html lang="en" className="h-full antialiased" suppressHydrationWarning>
             <body className="pt-64 bg-white dark:bg-[#24283b]">
