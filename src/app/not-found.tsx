@@ -1,6 +1,7 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { useTranslations } from "next-intl";
+// need to add this, otherwise will get error
 export const dynamic = 'force-dynamic'
 
 
