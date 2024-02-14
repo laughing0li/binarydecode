@@ -27,7 +27,6 @@ const languages = [
 export default function LanSwitcher() {
     const pathname = usePathname()
     const currentLocale = pathname != '/' ? pathname.split('/')[1].toUpperCase() : 'EN' 
-    console.log(pathname)
     return (
         <Popover className="relative">
             <Popover.Button className="hover:cursor-pointer inline-flex outline-none items-center gap-x-1 text-sm font-semibold leading-6 text-slate-700 dark:text-zinc-300">

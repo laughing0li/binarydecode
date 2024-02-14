@@ -5,7 +5,7 @@ export const locales = ['en', 'ch', 'jp', 'ko', 'es', 'fr', 'de', 'it', 'pt', 'r
 export const pathnames = {
     '/': '/',
     '/pathnames': {
-        en: '/en',
+        en: '/',
         ch: '/ch',
         jp: '/jp',
         ko: '/ko',

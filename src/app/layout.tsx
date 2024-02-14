@@ -23,7 +23,7 @@ function RootLayout({
             <body className="flex h-full bg-white dark:bg-[#24283b]">
                 <Providers>
                     <div className="flex w-full">
-                        <NextIntlClientProvider  messages={messages}>
+                        <NextIntlClientProvider messages={messages}>
                             <Layout>
                                 {children}
                             </Layout>
