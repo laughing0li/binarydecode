@@ -25,8 +25,22 @@ const languages = [
 ]
 
 export default function LanSwitcher() {
-    const pathname = usePathname()
-    const currentLocale = pathname != '/' ? pathname.split('/')[1].toUpperCase() : 'EN' 
+    const pathname = usePathname();
+    const pathItems = pathname.split('/').filter(item => item !== '');
+
+    // Default locale
+    let currentLocale = 'EN';
+    // Initialize toPath based on pathItems content
+    let toPath = pathItems.length > 0 ? pathItems[pathItems.length - 1] : '';
+
+    // Adjust currentLocale and toPath based on specific conditions
+    if (pathname !== '/' && pathItems.length > 0) {
+        // If the first pathItem does not contain '-', assume it's a locale
+        if (!pathItems[0].includes('-')) {
+            currentLocale = pathItems[0].toUpperCase();
+            toPath = pathItems.length > 1 ? pathItems[1] : '';
+        }
+    }
     return (
         <Popover className="relative">
             <Popover.Button className="hover:cursor-pointer inline-flex outline-none items-center gap-x-1 text-sm font-semibold leading-6 text-slate-700 dark:text-zinc-300">
@@ -46,8 +60,9 @@ export default function LanSwitcher() {
                 <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-min -translate-x-1/2 px-4">
                     <div className="w-46 max-h-60 overflow-auto shrink rounded-xl bg-white p-4 text-sm font-semibold leading-6 text-gray-900 shadow-lg ring-1 ring-gray-900/5">
                         {languages.map((item) => (
-                            // <Link href={item.href} key={item.locale} locale={item.locale} className="block p-2 hover:text-indigo-600">{item.name}</Link>
-                            <a className="block p-2 hover:text-indigo-600" key={item.name} href={item.href}>{item.name}</a>
+                            <a className="block p-2 hover:text-indigo-600" key={item.name} href={
+                                `/${item.locale}/${toPath}`
+                            }>{item.name}</a>
                         ))}
                     </div>
                 </Popover.Panel>

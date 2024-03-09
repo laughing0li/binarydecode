@@ -5,6 +5,7 @@ import { useTheme } from 'next-themes'
 import { Container } from '@/components/Container'
 import { useTranslations } from 'next-intl'
 import LanSwitcher from './LanSwitcher'
+import Link from 'next/link'
 
 function SunIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -66,11 +67,40 @@ function clamp(number: number, a: number, b: number) {
   return Math.min(Math.max(number, min), max)
 }
 
+const Names = [
+  { 'what-is-octal-code': 'octal-code' },
+  { 'what-is-hex-code': 'hex-code' },
+  { 'what-is-binary-code': 'binary-code' },
+  { 'binary-to-decimal-conversion': 'binary-to-decimal' },
+  { 'binary-to-hexadecimal-conversion': 'binary-to-hex' },
+  { 'binary-to-octal-conversion': 'binary-to-octal' },
+  { 'binary-to-text-conversion': 'binary-to-text' },
+  { 'decimal-to-binary-conversion': 'decimal-to-binary' },
+  { 'decimal-to-hexadecimal-conversion': 'decimal-to-hex' },
+  { 'decimal-to-octal-conversion': 'decimal-to-octal' },
+  { 'decimal-to-text-conversion': 'decimal-to-text' },
+  { 'octal-to-binary-conversion': 'octal-to-binary' },
+  { 'octal-to-decimal-conversion': 'octal-to-decimal' },
+  { 'octal-to-hexadecimal-conversion': 'octal-to-hex' },
+  { 'octal-to-text-conversion': 'octal-to-text' },
+  { 'hexadecimal-to-binary-conversion': 'hex-to-binary' },
+  { 'hexadecimal-to-decimal-conversion': 'hex-to-decimal' },
+  { 'hexadecimal-to-octal-conversion': 'hex-to-octal' },
+  { 'hexadecimal-to-text-conversion': 'hex-to-text' }
+]
 
 export function Header() {
   const t = useTranslations("Index");
-
   let isHomePage = usePathname() === '/'
+  const pathItems = usePathname().split('/').filter((item) => item.includes('-'))
+  let pathName = ''
+
+  if (pathItems.length > 0) pathName = pathItems[0]
+  const key = pathItems[0] as keyof typeof Names[number];
+  const obj = Names.find((item) => key in item);
+  const value = obj ? obj[key] : undefined;
+  // errors here
+  const h = useTranslations(value);
 
   let headerRef = useRef<React.ElementRef<'div'>>(null)
   let avatarRef = useRef<React.ElementRef<'div'>>(null)
@@ -195,12 +225,22 @@ export function Header() {
             }}
           >
             <div className="relative flex gap-4 pt-4 mb-16">
+
               <div className="flex flex-1 pointer-events-auto">
+                <Link href='/'>
+                  <i className="bi bi-house text-2xl mr-3" />
+                </Link>
                 <LanSwitcher />
               </div>
-              <h1 className="text-4xl font-mono font-bold tracking-tight text-slate-700 sm:text-5xl dark:text-zinc-300">
-                {t("Header.title")}
-              </h1>
+              {
+                (pathItems.length > 0) ?
+                  <h1 className="text-md font-mono font-bold tracking-tight text-slate-500 sm:text-xl dark:text-zinc-400">
+                    {h('title')}
+                  </h1> :
+                  <h1 className="text-2xl font-mono font-bold tracking-tight text-slate-500 sm:text-3xl dark:text-zinc-400">
+                    {t('Header.title')}
+                  </h1>
+              }
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto">
                   <ThemeToggle />

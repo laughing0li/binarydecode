@@ -34,3 +34,4 @@ translation.py
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+sitemap.py

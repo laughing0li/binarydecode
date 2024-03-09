@@ -4,6 +4,8 @@ import { Providers } from '../providers';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { Layout } from '@/components/Layout';
 import { unstable_setRequestLocale } from 'next-intl/server';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 type Props = {
     children: ReactNode;
     params: { locale: string };
