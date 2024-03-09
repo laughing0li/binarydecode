@@ -69,7 +69,7 @@ function clamp(number: number, a: number, b: number) {
 
 const Names = [
   { 'what-is-octal-code': 'octal-code' },
-  { 'what-is-hex-code': 'hex-code' },
+  { 'what-is-hexadecimal-code': 'hex-code' },
   { 'what-is-binary-code': 'binary-code' },
   { 'binary-to-decimal-conversion': 'binary-to-decimal' },
   { 'binary-to-hexadecimal-conversion': 'binary-to-hex' },
