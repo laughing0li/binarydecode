@@ -38,7 +38,7 @@
             "swap": "Intercambiar formato"
         },
         "Header": {
-            "title": "Decodificador binario"
+            "title": "Traductor Binario"
         },
         "questionList": {
             "title1": "¿Qué es el código binario?",
@@ -64,8 +64,8 @@
     },
     "Metadata": {
         "metadata": {
-            "title": "Binary Decode - Decodificador y traductor de código binario",
-            "description": "Binary Decode es un decodificador y traductor de códigos. Decodificación binaria una herramienta en línea gratuita para decodificar entre dos de octal, binario, texto, decimal y hexadecimal."
+            "title": "Traductor Binario - Decodificador y traductor de código binario",
+            "description": "Traductor Binario es un decodificador y traductor de códigos. Decodificación binaria una herramienta en línea gratuita para decodificar entre dos de octal, binario, texto, decimal y hexadecimal."
         }
     },
     "octal-code": {

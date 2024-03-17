@@ -38,7 +38,7 @@
             "swap": "Format tauschen"
         },
         "Header": {
-            "title": "Binärdecoder"
+            "title": "Binärcode Übersetzer"
         },
         "questionList": {
             "title1": "Was ist Binärcode?",
@@ -64,8 +64,8 @@
     },
     "Metadata": {
         "metadata": {
-            "title": "Binärdekodierung – Binärcode-Decoder und -Übersetzer",
-            "description": "Binary Decode ist ein Code-Decoder und Übersetzer. Binärdekodierung ist ein kostenloses Online-Tool zum Dekodieren zwischen zwei beliebigen Zahlen: Oktal, Binär, Text, Dezimal und Hexadezimal."
+            "title": "Binärdekodierung – Binärcode Decoder und Übersetzer",
+            "description": "Entdecken Sie Binary Decode, Ihren umfassenden Code-Decoder und binärcode übersetzer. Binärdekodierung bietet ein kostenloses Online-Tool für die Übersetzung und Dekodierung zwischen verschiedenen Zahlenformaten: Oktal, Binär, Text, Dezimal, und Hexadezimal. Ideal für alle, die mit Datenformatierung und Code-Übersetzung arbeiten."
         }
     },
     "octal-code": {
