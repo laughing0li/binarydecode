@@ -6,6 +6,7 @@ import { Container } from '@/components/Container'
 import { useTranslations } from 'next-intl'
 import LanSwitcher from './LanSwitcher'
 import Link from 'next/link'
+import Banner from './Banner'
 
 function SunIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -208,6 +209,7 @@ export function Header() {
 
   return (
     <>
+    <Banner/>
       <header
         className="pointer-events-none relative z-50 flex flex-none flex-col"
         style={{

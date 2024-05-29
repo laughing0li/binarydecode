@@ -1,21 +1,22 @@
-import Analytics from '@/components/Analytics';
+import Analytics from '@/components/Analytics'
 import React, { ReactNode } from 'react'
-import { Providers } from '../providers';
-import { NextIntlClientProvider, useMessages } from 'next-intl';
-import { Layout } from '@/components/Layout';
-import { unstable_setRequestLocale } from 'next-intl/server';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Providers } from '../providers'
+import { NextIntlClientProvider, useMessages } from 'next-intl'
+import { Layout } from '@/components/Layout'
+import { unstable_setRequestLocale } from 'next-intl/server'
+import 'bootstrap-icons/font/bootstrap-icons.css'
+import Banner from '@/components/Banner'
 
 type Props = {
-    children: ReactNode;
-    params: { locale: string };
-};
+    children: ReactNode
+    params: { locale: string }
+}
 const IndexLayout = ({
     children,
     params: { locale },
 }: Props) => {
-    const messages = useMessages();
-    unstable_setRequestLocale(locale);
+    const messages = useMessages()
+    unstable_setRequestLocale(locale)
     return (
         <html lang={locale} className="h-full antialiased" suppressHydrationWarning>
             <Analytics />
