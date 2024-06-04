@@ -33,11 +33,11 @@ export function Footer() {
                 href="https://shipfa.st/?via=yunlong"
                 title={`shipfast homepage`}
               >
-                <span className="text-white">Built with</span>
+                <span className="dark:text-white">Built with</span>
                 <Image
                   src={logo}
                   alt={`shipfast logo`}
-                  className="w-24"
+                  className="w-24 bg-black rounded-xl"
                   priority={true}
                   width={100}
                   height={100}
