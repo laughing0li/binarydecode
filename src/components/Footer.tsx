@@ -50,11 +50,14 @@ export function Footer() {
                                 <Link href="https://photorater.io/" target="blank" title="AI photo rating app" className="link link-hover">
                                     Photo Rater
                                 </Link>
-                                <Link href="https://sunodownloader.io/" target="blank" title="Suno music downloader" className="link link-hover">
-                                    Suno Downloader
+                                <Link href="https://www.sunodownloader.io/ai-music-generator" target="blank" title="AI Music Generator" className="link link-hover">
+                                    AI Music Generator
                                 </Link>
                                 <Link href="https://soundifytext.io/" target="blank" title="AI sound effects generator" className="link link-hover">
                                     Soundify
+                                </Link>
+                                <Link href="https://flux1ai.ai/" target="blank" title="Flux AI Image Generator" className="link link-hover">
+                                    Flux AI Image Generator
                                 </Link>
                             </div>
                             <p className="text-sm text-zinc-400 dark:text-zinc-500">
