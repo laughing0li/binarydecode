@@ -6,7 +6,6 @@ import { Layout } from '@/components/Layout'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import Banner from '@/components/Banner'
-import Ads from '@/components/Ads'
 
 type Props = {
     children: ReactNode
@@ -20,7 +19,6 @@ const IndexLayout = ({
     unstable_setRequestLocale(locale)
     return (
         <html lang={locale} className="h-full antialiased" suppressHydrationWarning>
-            <Ads />
             <Analytics />
             <body className="flex h-full bg-white dark:bg-[#24283b]">
                 <Providers>
