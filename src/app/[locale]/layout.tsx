@@ -5,7 +5,6 @@ import { NextIntlClientProvider, useMessages } from 'next-intl'
 import { Layout } from '@/components/Layout'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import Banner from '@/components/Banner'
 
 type Props = {
     children: ReactNode

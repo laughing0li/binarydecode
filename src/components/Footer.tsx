@@ -59,6 +59,10 @@ export function Footer() {
                                 <Link href="https://flux1ai.ai/" target="blank" title="Flux AI Image Generator" className="link link-hover">
                                     Flux AI Image Generator
                                 </Link>
+                                <Link href="https://hdphotoconverter.net/" target="blank" title="HD Photo Converter" className="link link-hover">
+                                    HD Photo Converter
+                                </Link>
+
                             </div>
                             <p className="text-sm text-zinc-400 dark:text-zinc-500">
                                 &copy; {new Date().getFullYear()} Binary Decode. All rights
