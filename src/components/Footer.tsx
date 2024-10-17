@@ -62,7 +62,12 @@ export function Footer() {
                                 <Link href="https://hdphotoconverter.net/" target="blank" title="HD Photo Converter" className="link link-hover">
                                     HD Photo Converter
                                 </Link>
-
+                                <Link href="https://hdimageconverter.net/" target="blank" title="HD Image Converter" className="link link-hover">
+                                    HD Image Converter
+                                </Link>
+                                <Link href="https://sprunkiincrediboxes.net/" target="blank" title="Sprunki Incrediboxes" className="link link-hover">
+                                    Sprunki Incrediboxes
+                                </Link>
                             </div>
                             <p className="text-sm text-zinc-400 dark:text-zinc-500">
                                 &copy; {new Date().getFullYear()} Binary Decode. All rights
