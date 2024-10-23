@@ -28,21 +28,6 @@ export function Footer() {
 
                     <ContainerInner>
                         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
-                            <Link
-                                className="flex items-center gap-2 shrink-0 mt-4 sm:mt-0"
-                                href="https://shipfa.st/?via=yunlong"
-                                title={`shipfast homepage`}
-                            >
-                                <span className="dark:text-white">Built with</span>
-                                <Image
-                                    src={logo}
-                                    alt={`shipfast logo`}
-                                    className="w-24 bg-black rounded-xl"
-                                    priority={true}
-                                    width={100}
-                                    height={100}
-                                />
-                            </Link>
                             <div className="grid grid-cols-1 gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                                 <Link href="https://resumego.io/" target="blank" title="AI Resume tailor" className="link link-hover">
                                     ResumeGo
@@ -67,6 +52,9 @@ export function Footer() {
                                 </Link>
                                 <Link href="https://sprunkiincrediboxes.net/" target="blank" title="Sprunki Incrediboxes" className="link link-hover">
                                     Sprunki Incrediboxes
+                                </Link>
+                                <Link href="https://actone.app/" target="blank" title="Mochi 1 Ai video generator" className="link link-hover">
+                                    Mochi 1 Ai video generator
                                 </Link>
                             </div>
                             <p className="text-sm text-zinc-400 dark:text-zinc-500">
