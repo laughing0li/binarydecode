@@ -1,4 +1,5 @@
 import Analytics from '@/components/Analytics'
+import Ads from '@/components/Ads'
 import React, { ReactNode } from 'react'
 import { Providers } from '../providers'
 import { NextIntlClientProvider, useMessages } from 'next-intl'
@@ -18,6 +19,7 @@ const IndexLayout = ({
     unstable_setRequestLocale(locale)
     return (
         <html lang={locale} className="h-full antialiased" suppressHydrationWarning>
+            <Ads />
             <Analytics />
             <body className="flex h-full bg-white dark:bg-[#24283b]">
                 <Providers>
