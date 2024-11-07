@@ -3,7 +3,7 @@ import Faqs from '@/components/Faqs'
 import TransferLayout from '@/components/TransferLayout'
 import { getTranslations } from 'next-intl/server'
 import { ReactNode } from 'react'
-
+import AdSense from '@/components/AdSense'
 type Props = {
     children: ReactNode
     params: { locale: string }
@@ -54,6 +54,7 @@ export default function IndexPage() {
         <>
             <Container>
                 <TransferLayout />
+                <AdSense slot="3719858701" />
                 <Faqs />
             </Container>
         </>
