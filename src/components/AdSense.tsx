@@ -38,7 +38,7 @@ const AdSense: React.FC<AdSenseProps> = ({ slot }) => {
     }, []);
 
     return (
-        <div ref={adRef}>
+        <div ref={adRef} className="mt-12">
             <ins
                 className="adsbygoogle"
                 style={{ display: 'block' }}
